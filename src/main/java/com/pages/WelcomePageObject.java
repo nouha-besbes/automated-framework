@@ -12,16 +12,27 @@ public class WelcomePageObject extends BasePageObject {
 		super(driver, log);
 	}
 
+	private By authenticationFormLocator = By.linkText("Form Authentication");
+
+	private By checkboxesLinkLocator = By.cssSelector("a[href='/checkboxes']");
+
 	public void openPage() {
 		// open main page
 		openUrl(pageUrl);
 		log.info("Main page is opened.");
 	}
-	
+
+	public CheckboxesPage clickCheckboxesLink() {
+		log.info("Clicking checkbexes link on welcome Page");
+		// Click on Form Authentication link
+		click(checkboxesLinkLocator);
+		return new CheckboxesPage(driver, log);
+	}
+
 	public LoginPage clickFormAuthenticationLink() {
 		log.info("Clicking Form Authentication link on welcome Page");
 		// Click on Form Authentication link
-		click(By.linkText("Form Authentication"));
+		click(authenticationFormLocator);
 		return new LoginPage(driver, log);
 	}
 }

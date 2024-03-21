@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="CheckboxesTestSuite" verbose="1">
+	
+	<test name="CheckboxesTests">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="test.java.com.checkboxespagestest.CheckboxesTests" />
+		</classes>
+	</test>
+	 
+</suite>

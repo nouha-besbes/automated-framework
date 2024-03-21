@@ -8,8 +8,7 @@ import main.java.com.base.TestUtilities;
 import main.java.com.pages.LoginPage;
 import main.java.com.pages.WelcomePageObject;
 
-public class NegativeLoginTests extends TestUtilities{
-
+public class NegativeLoginTests extends TestUtilities {
 
 	@Parameters({ "username", "password", "expectedMessage" })
 	@Test(priority = 1)
@@ -21,7 +20,7 @@ public class NegativeLoginTests extends TestUtilities{
 
 		LoginPage loginPage = welcomePageObject.clickFormAuthenticationLink();
 		loginPage.negaliveLogIn(username, password);
-		
+
 		loginPage.waitForErrorMessage();
 
 		// Verification
@@ -31,6 +30,4 @@ public class NegativeLoginTests extends TestUtilities{
 						+ expectedErrorMessage + "\nactualErrorMessage: " + actualErrorMessage);
 	}
 
-
-	
 }

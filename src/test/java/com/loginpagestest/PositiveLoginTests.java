@@ -9,17 +9,17 @@ import main.java.com.pages.SecureAreaPage;
 import main.java.com.pages.WelcomePageObject;
 
 public class PositiveLoginTests extends TestUtilities {
-	
+
 	@Test
 	public void logInTest() {
 		log.info("Starting logIn test");
 
 		WelcomePageObject welcomePageObject = new WelcomePageObject(driver, log);
 		welcomePageObject.openPage();
-		
+
 		LoginPage loginPage = welcomePageObject.clickFormAuthenticationLink();
 		SecureAreaPage secureAreaPage = loginPage.logIn("tomsmith", "SuperSecretPassword!");
-		
+
 		String expectedUrl = "https://the-internet.herokuapp.com/secure";
 		Assert.assertEquals(secureAreaPage.getCurrentUrl(), expectedUrl);
 
