@@ -1,4 +1,4 @@
-package com.checkboxespagestest;
+package com.checkboxestest;
 
 import static org.testng.Assert.assertTrue;
 

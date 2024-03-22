@@ -16,6 +16,8 @@ public class WelcomePageObject extends BasePageObject {
 
 	private By checkboxesLinkLocator = By.cssSelector("a[href='/checkboxes']");
 
+	private By dropdownLinkLocator = By.linkText("Dropdown");
+
 	public void openPage() {
 		// open main page
 		openUrl(pageUrl);
@@ -34,5 +36,12 @@ public class WelcomePageObject extends BasePageObject {
 		// Click on Form Authentication link
 		click(authenticationFormLocator);
 		return new LoginPage(driver, log);
+	}
+
+	public DropdownPage clickDropDownLink() {
+		log.info("Clicking dropdown link on welcome Page");
+		// Click on Form Authentication link
+		click(dropdownLinkLocator);
+		return new DropdownPage(driver, log);
 	}
 }

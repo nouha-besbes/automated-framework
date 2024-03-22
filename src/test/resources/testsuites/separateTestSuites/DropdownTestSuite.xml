@@ -1,11 +1,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="CheckboxesTestSuite" verbose="1">
+<suite name="DropDownTestsSuite" verbose="1">
 	
-	<test name="CheckboxesTests">
+	<test name="DropDownTests">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
-			<class name="com.checkboxestest.CheckboxesTests" />
+			<class name="com.dropdowntest.DropDownTests" />
 		</classes>
 	</test>
 	 

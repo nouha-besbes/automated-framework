@@ -54,7 +54,7 @@
 	
 	<test name="CheckboxesTests">
 		<classes>
-			<class name="com.checkboxespagestest.CheckboxesTests" />
+			<class name="com.checkboxestest.CheckboxesTests" />
 		</classes>
 	</test>
 </suite>
