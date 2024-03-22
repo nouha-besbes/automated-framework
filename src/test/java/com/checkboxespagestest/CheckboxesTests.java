@@ -1,12 +1,12 @@
-package test.java.com.checkboxespagestest;
+package com.checkboxespagestest;
 
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.Test;
 
-import main.java.com.base.TestUtilities;
-import main.java.com.pages.CheckboxesPage;
-import main.java.com.pages.WelcomePageObject;
+import com.base.TestUtilities;
+import com.pages.CheckboxesPage;
+import com.pages.WelcomePageObject;
 
 public class CheckboxesTests extends TestUtilities {
 

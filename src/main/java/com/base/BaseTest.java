@@ -1,4 +1,4 @@
-package main.java.com.base;
+package com.base;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

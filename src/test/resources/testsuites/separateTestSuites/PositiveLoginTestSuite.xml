@@ -4,7 +4,7 @@
 	
 	<test name="PositiveLoginTest">
 		<classes>
-			<class name="test.java.com.loginpagestest.PositiveLoginTests" />
+			<class name="com.loginpagestest.PositiveLoginTests" />
 		</classes>
 	</test>
 	

@@ -1,4 +1,4 @@
-package main.java.com.base;
+package com.base;
 
 public class TestUtilities extends BaseTest {
 

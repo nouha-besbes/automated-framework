@@ -1,12 +1,12 @@
-package test.java.com.loginpagestest;
+package com.loginpagestest;
 
 import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import main.java.com.base.TestUtilities;
-import main.java.com.pages.LoginPage;
-import main.java.com.pages.WelcomePageObject;
+import com.base.TestUtilities;
+import com.pages.LoginPage;
+import com.pages.WelcomePageObject;
 
 public class NegativeLoginTests extends TestUtilities {
 

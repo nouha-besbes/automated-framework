@@ -5,7 +5,7 @@
 	<test name="CheckboxesTests">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
-			<class name="test.java.com.checkboxespagestest.CheckboxesTests" />
+			<class name="com.checkboxespagestest.CheckboxesTests" />
 		</classes>
 	</test>
 	 

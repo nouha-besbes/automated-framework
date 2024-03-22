@@ -4,7 +4,7 @@
 	
 	<test name="PositiveLoginTest">
 		<classes>
-			<class name="test.java.com.loginpagestest.PositiveLoginTests" />
+			<class name="com.loginpagestest.PositiveLoginTests" />
 		</classes>
 	</test>
 	
@@ -14,7 +14,7 @@
 		<parameter name="expectedMessage" value="Your username is invalid!"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
-			<class name="test.java.com.loginpagestest.NegativeLoginTests">
+			<class name="com.loginpagestest.NegativeLoginTests">
 			</class>
 		</classes>
 	</test>
@@ -25,7 +25,7 @@
 		<parameter name="expectedMessage" value="Your username is invalid!"></parameter>
 		<parameter name="browser" value="firefox"></parameter>
 		<classes>
-			<class name="test.java.com.loginpagestest.NegativeLoginTests">
+			<class name="com.loginpagestest.NegativeLoginTests">
 			</class>
 		</classes>
 	</test>
@@ -36,7 +36,7 @@
 		<parameter name="expectedMessage" value="Your password is invalid!"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
-			<class name="test.java.com.loginpagestest.NegativeLoginTests">
+			<class name="com.loginpagestest.NegativeLoginTests">
 			</class>
 		</classes>
 	</test>
@@ -47,14 +47,14 @@
 		<parameter name="expectedMessage" value="Your password is invalid!"></parameter>
 		<parameter name="browser" value="firefox"></parameter>
 		<classes>
-			<class name="test.java.com.loginpagestest.NegativeLoginTests">
+			<class name="com.loginpagestest.NegativeLoginTests">
 			</class>
 		</classes>
 	</test>
 	
 	<test name="CheckboxesTests">
 		<classes>
-			<class name="test.java.com.checkboxespagestest.CheckboxesTests" />
+			<class name="com.checkboxespagestest.CheckboxesTests" />
 		</classes>
 	</test>
 </suite>

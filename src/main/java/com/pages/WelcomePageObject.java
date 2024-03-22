@@ -1,4 +1,4 @@
-package main.java.com.pages;
+package com.pages;
 
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
