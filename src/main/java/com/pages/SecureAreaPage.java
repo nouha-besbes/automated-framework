@@ -8,7 +8,7 @@ public class SecureAreaPage extends BasePageObject {
 
 	private String pageUrl = "https://the-internet.herokuapp.com/secure";
 
-	private By logOutButoon = By.className("//a[@class='button secondary radius']");
+	private By logOutButoon = By.xpath("//i[@class='icon-2x icon-signout']");
 
 	private By message = By.id("flash");
 

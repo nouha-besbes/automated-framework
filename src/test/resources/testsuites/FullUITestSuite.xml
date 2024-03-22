@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="PositiveLoginTestSuite" verbose="1" thread-count="4" >
+<suite name="FullUITestSuites" verbose="1" thread-count="4" >
 	
 	<test name="PositiveLoginTest">
 		<classes>
@@ -54,7 +54,7 @@
 	
 	<test name="CheckboxesTests">
 		<classes>
-			<class name="test.java.com.loginpagestest.CheckboxesTests" />
+			<class name="test.java.com.checkboxespagestest.CheckboxesTests" />
 		</classes>
 	</test>
 </suite>
