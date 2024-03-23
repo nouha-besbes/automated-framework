@@ -1,4 +1,4 @@
-package com.alertesTests;
+package com.alertestest;
 
 import static org.testng.Assert.assertTrue;
 

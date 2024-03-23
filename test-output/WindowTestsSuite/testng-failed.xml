@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [WindowTestsSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="WindowTests(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.multiplewindowtest.MultipleWindowTests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="openTabTest"/>
+        </methods>
+      </class> <!-- com.multiplewindowtest.MultipleWindowTests -->
+    </classes>
+  </test> <!-- WindowTests(failed) -->
+</suite> <!-- Failed suite [WindowTestsSuite] -->

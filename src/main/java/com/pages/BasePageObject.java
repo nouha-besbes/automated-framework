@@ -2,6 +2,7 @@ package com.pages;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.Set;
 
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Alert;
@@ -67,6 +68,7 @@ public class BasePageObject {
 						(timeOutInSeconds.length > 0 ? timeOutInSeconds[0] : null));
 				break;
 			} catch (StaleElementReferenceException e) {
+				log.error("Error wait for visbility " + e.getMessage());
 			}
 			attempts++;
 		}
@@ -86,5 +88,39 @@ public class BasePageObject {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.alertIsPresent());
 		return driver.switchTo().alert();
+	}
+
+	/** Switch to alert when its visible */
+	protected void switchToWindowWithTitle(String expectedTitle) {
+		// switching to new window
+		String firstWindow = driver.getWindowHandle();
+
+		Set<String> allWindows = driver.getWindowHandles();
+		java.util.Iterator<String> windowIterator = allWindows.iterator();
+
+		while (windowIterator.hasNext()) {
+			String windowHandle = windowIterator.next().toString();
+			if (!windowHandle.equals(firstWindow)) {
+				driver.switchTo().window(windowHandle);
+				if (getCurrentPagetTitle().equals(expectedTitle)) {
+					break;
+				}
+			}
+		}
+	}
+
+	/** Get source of current page */
+	public String getCurrentPageSource() {
+		return driver.getPageSource();
+	}
+
+	/** Get source of current page title */
+	public String getCurrentPagetTitle() {
+		return driver.getTitle();
+	}
+
+	/** Switch to Frame */
+	protected void switchToFrame(By frameLocator) {
+		driver.switchTo().frame(find(frameLocator));
 	}
 }

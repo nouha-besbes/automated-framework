@@ -1,11 +1,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="AlertesTestsSuite" verbose="1">
+<suite name="WindowTestsSuite" verbose="1">
 	
-	<test name="AlertesTests">
+	<test name="WindowTests">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
-			<class name="com.alertestest.AlertesTests" />
+			<class name="com.multiplewindowtest.MultipleWindowTests" />
 		</classes>
 	</test>
 	 

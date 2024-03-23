@@ -1,11 +1,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="AlertesTestsSuite" verbose="1">
+<suite name="EditorTestsSuite" verbose="1">
 	
-	<test name="AlertesTests">
+	<test name="EditorTests">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
-			<class name="com.alertestest.AlertesTests" />
+			<class name="com.editor.EditorTests" />
 		</classes>
 	</test>
 	 

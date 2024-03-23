@@ -69,7 +69,7 @@
 	<test name="AlertesTests">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
-			<class name="com.alertesTests.AlertesTests" />
+			<class name="com.alertestest.AlertesTests" />
 		</classes>
 	</test>
 </suite>

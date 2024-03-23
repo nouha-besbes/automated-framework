@@ -20,6 +20,10 @@ public class WelcomePageObject extends BasePageObject {
 
 	private By alertesLinkLocator = By.linkText("JavaScript Alerts");
 
+	private By multipeWindowLinkLocator = By.linkText("Multiple Windows");
+
+	private By editorLinkLocator = By.linkText("WYSIWYG Editor");
+
 	public void openPage() {
 		// open main page
 		openUrl(pageUrl);
@@ -52,5 +56,19 @@ public class WelcomePageObject extends BasePageObject {
 		// Click on Form Authentication link
 		click(alertesLinkLocator);
 		return new AlertesPage(driver, log);
+	}
+
+	public WindowPage clickWindowLink() {
+		log.info("Clicking window link on welcome Page");
+		// Click on window link
+		click(multipeWindowLinkLocator);
+		return new WindowPage(driver, log);
+	}
+
+	public EditorPage clickEditorLink() {
+		log.info("Clicking window link on welcome Page");
+		// Click on editor link
+		click(editorLinkLocator);
+		return new EditorPage(driver, log);
 	}
 }
