@@ -29,6 +29,7 @@ public class DropdownPage extends BasePageObject {
 
 	public String getSelectedOption() {
 		log.info("Get selected option");
+
 		WebElement dropdownElement = find(dropdownLocator);
 		Select dropdown = new Select(dropdownElement);
 

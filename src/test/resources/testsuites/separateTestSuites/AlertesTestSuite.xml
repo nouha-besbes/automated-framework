@@ -1,11 +1,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="DropDownTestsSuite" verbose="1">
+<suite name="AlertesTestsSuite" verbose="1">
 	
-	<test name="DropDownTests">
+	<test name="AlertesTests">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
-			<class name="com.dropdowntest.DropdownTests" />
+			<class name="com.alertesTests.AlertesTests" />
 		</classes>
 	</test>
 	 

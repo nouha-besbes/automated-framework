@@ -18,6 +18,8 @@ public class WelcomePageObject extends BasePageObject {
 
 	private By dropdownLinkLocator = By.linkText("Dropdown");
 
+	private By alertesLinkLocator = By.linkText("JavaScript Alerts");
+
 	public void openPage() {
 		// open main page
 		openUrl(pageUrl);
@@ -43,5 +45,12 @@ public class WelcomePageObject extends BasePageObject {
 		// Click on Form Authentication link
 		click(dropdownLinkLocator);
 		return new DropdownPage(driver, log);
+	}
+
+	public AlertesPage clickAlertesLink() {
+		log.info("Clicking dropdown link on welcome Page");
+		// Click on Form Authentication link
+		click(alertesLinkLocator);
+		return new AlertesPage(driver, log);
 	}
 }

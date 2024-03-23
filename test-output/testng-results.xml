@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-22T17:53:16 CET" name="DropDownTestsSuite" finished-at="2024-03-22T17:53:27 CET" duration-ms="10794">
+  <suite started-at="2024-03-23T03:34:09 CET" name="AlertesTestsSuite" finished-at="2024-03-23T03:34:31 CET" duration-ms="21851">
     <groups>
     </groups>
-    <test started-at="2024-03-22T17:53:16 CET" name="DropDownTests" finished-at="2024-03-22T17:53:27 CET" duration-ms="10794">
-      <class name="com.dropdowntest.DropDownTests">
-        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.dropdowntest.DropDownTests@7139992f]" started-at="2024-03-22T17:53:16 CET" name="setUp" finished-at="2024-03-22T17:53:19 CET" duration-ms="2751" status="PASS">
+    <test started-at="2024-03-23T03:34:09 CET" name="AlertesTests" finished-at="2024-03-23T03:34:31 CET" duration-ms="21851">
+      <class name="com.alertesTests.AlertesTests">
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.alertesTests.AlertesTests@387a8303]" started-at="2024-03-23T03:34:09 CET" name="setUp" finished-at="2024-03-23T03:34:14 CET" duration-ms="4593" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -16,22 +16,70 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@67594471]]>
+                <![CDATA[org.testng.TestRunner@1f0b3cfe]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="selectingDropDownTest()[pri:0, instance:com.dropdowntest.DropDownTests@7139992f]" started-at="2024-03-22T17:53:19 CET" name="selectingDropDownTest" finished-at="2024-03-22T17:53:26 CET" duration-ms="7303" status="PASS">
+        <test-method signature="jsAlertesTest()[pri:0, instance:com.alertesTests.AlertesTests@387a8303]" started-at="2024-03-23T03:34:14 CET" name="jsAlertesTest" finished-at="2024-03-23T03:34:17 CET" duration-ms="3506" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectingDropDownTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dropdowntest.DropDownTests@7139992f]" started-at="2024-03-22T17:53:26 CET" name="tearDown" finished-at="2024-03-22T17:53:27 CET" duration-ms="691" status="PASS">
+        </test-method> <!-- jsAlertesTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.alertesTests.AlertesTests@387a8303]" started-at="2024-03-23T03:34:17 CET" name="tearDown" finished-at="2024-03-23T03:34:18 CET" duration-ms="771" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.dropdowntest.DropDownTests -->
-    </test> <!-- DropDownTests -->
-  </suite> <!-- DropDownTestsSuite -->
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.alertesTests.AlertesTests@387a8303]" started-at="2024-03-23T03:34:18 CET" name="setUp" finished-at="2024-03-23T03:34:20 CET" duration-ms="2395" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@1f0b3cfe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="jsDismissTest()[pri:0, instance:com.alertesTests.AlertesTests@387a8303]" started-at="2024-03-23T03:34:20 CET" name="jsDismissTest" finished-at="2024-03-23T03:34:23 CET" duration-ms="3273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsDismissTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.alertesTests.AlertesTests@387a8303]" started-at="2024-03-23T03:34:23 CET" name="tearDown" finished-at="2024-03-23T03:34:24 CET" duration-ms="744" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.alertesTests.AlertesTests@387a8303]" started-at="2024-03-23T03:34:24 CET" name="setUp" finished-at="2024-03-23T03:34:27 CET" duration-ms="2301" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@1f0b3cfe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="jsPrompTest()[pri:0, instance:com.alertesTests.AlertesTests@387a8303]" started-at="2024-03-23T03:34:27 CET" name="jsPrompTest" finished-at="2024-03-23T03:34:30 CET" duration-ms="3468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsPrompTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.alertesTests.AlertesTests@387a8303]" started-at="2024-03-23T03:34:30 CET" name="tearDown" finished-at="2024-03-23T03:34:31 CET" duration-ms="744" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.alertesTests.AlertesTests -->
+    </test> <!-- AlertesTests -->
+  </suite> <!-- AlertesTestsSuite -->
 </testng-results>

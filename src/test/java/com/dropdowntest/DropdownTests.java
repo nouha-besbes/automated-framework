@@ -8,7 +8,7 @@ import com.base.TestUtilities;
 import com.pages.DropdownPage;
 import com.pages.WelcomePageObject;
 
-public class DropDownTests extends TestUtilities {
+public class DropdownTests extends TestUtilities {
 
 	@Test
 	public void selectingDropDownTest() {
@@ -18,13 +18,13 @@ public class DropDownTests extends TestUtilities {
 		WelcomePageObject welcomePage = new WelcomePageObject(driver, log);
 		welcomePage.openPage();
 
-		// Click on Checkboxes link
-		DropdownPage checkboxesPage = welcomePage.clickDropDownLink();
+		// Click on Dropdown link
+		DropdownPage dropdownPage = welcomePage.clickDropDownLink();
 
 		// Select option
-		checkboxesPage.selectOption(2);
+		dropdownPage.selectOption(2);
 
 		// Verify all checkboxes are checked
-		assertEquals(checkboxesPage.getSelectedOption(), "Option 2");
+		assertEquals(dropdownPage.getSelectedOption(), "Option 2");
 	}
 }
