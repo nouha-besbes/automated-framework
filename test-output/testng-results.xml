@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-24T16:49:55 CET" name="HorizontalSliderTestSuite" finished-at="2024-03-24T16:50:18 CET" duration-ms="23392">
+  <suite started-at="2024-03-24T22:28:21 CET" name="FileUploaderTestsSuite" finished-at="2024-03-24T22:28:39 CET" duration-ms="17720">
     <groups>
     </groups>
-    <test started-at="2024-03-24T16:49:55 CET" name="HorizontalSliderTests-CH" finished-at="2024-03-24T16:50:06 CET" duration-ms="11422">
-      <class name="com.horizontalslidetest.HorizontalSliderTests">
-        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.horizontalslidetest.HorizontalSliderTests@69504ae9]" started-at="2024-03-24T16:49:55 CET" name="setUp" finished-at="2024-03-24T16:49:59 CET" duration-ms="3625" status="PASS">
+    <test started-at="2024-03-24T22:28:21 CET" name="FileUploaderTests" finished-at="2024-03-24T22:28:39 CET" duration-ms="17720">
+      <class name="com.fileuploadertest.FileUploaderTests">
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.fileuploadertest.FileUploaderTests@7dfb0c0f]" started-at="2024-03-24T22:28:21 CET" name="setUp" finished-at="2024-03-24T22:28:24 CET" duration-ms="2629" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -16,50 +16,106 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@468dda3e]]>
+                <![CDATA[org.testng.TestRunner@2133661d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="sliderTest()[pri:0, instance:com.horizontalslidetest.HorizontalSliderTests@69504ae9]" started-at="2024-03-24T16:49:59 CET" name="sliderTest" finished-at="2024-03-24T16:50:06 CET" duration-ms="7054" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sliderTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.horizontalslidetest.HorizontalSliderTests@69504ae9]" started-at="2024-03-24T16:50:06 CET" name="tearDown" finished-at="2024-03-24T16:50:06 CET" duration-ms="706" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.horizontalslidetest.HorizontalSliderTests -->
-    </test> <!-- HorizontalSliderTests-CH -->
-    <test started-at="2024-03-24T16:50:07 CET" name="HorizontalSliderTests-FF" finished-at="2024-03-24T16:50:18 CET" duration-ms="11941">
-      <class name="com.horizontalslidetest.HorizontalSliderTests">
-        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.horizontalslidetest.HorizontalSliderTests@61710c6]" started-at="2024-03-24T16:50:07 CET" name="setUp" finished-at="2024-03-24T16:50:11 CET" duration-ms="4718" status="PASS">
+        <test-method signature="fileUploaderTest(int,java.lang.String)[pri:0, instance:com.fileuploadertest.FileUploaderTests@7dfb0c0f]" started-at="2024-03-24T22:28:24 CET" name="fileUploaderTest" data-provider="files" finished-at="2024-03-24T22:28:27 CET" duration-ms="3222" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[1]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@5527b211]]>
+                <![CDATA[Test.txt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileUploaderTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.fileuploadertest.FileUploaderTests@7dfb0c0f]" started-at="2024-03-24T22:28:27 CET" name="tearDown" finished-at="2024-03-24T22:28:28 CET" duration-ms="641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.fileuploadertest.FileUploaderTests@7dfb0c0f]" started-at="2024-03-24T22:28:28 CET" name="setUp" finished-at="2024-03-24T22:28:30 CET" duration-ms="1886" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2133661d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="sliderTest()[pri:0, instance:com.horizontalslidetest.HorizontalSliderTests@61710c6]" started-at="2024-03-24T16:50:11 CET" name="sliderTest" finished-at="2024-03-24T16:50:17 CET" duration-ms="6254" status="PASS">
+        <test-method signature="fileUploaderTest(int,java.lang.String)[pri:0, instance:com.fileuploadertest.FileUploaderTests@7dfb0c0f]" started-at="2024-03-24T22:28:30 CET" name="fileUploaderTest" data-provider="files" finished-at="2024-03-24T22:28:33 CET" duration-ms="2992" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NewFile.xml]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sliderTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.horizontalslidetest.HorizontalSliderTests@61710c6]" started-at="2024-03-24T16:50:17 CET" name="tearDown" finished-at="2024-03-24T16:50:18 CET" duration-ms="965" status="PASS">
+        </test-method> <!-- fileUploaderTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.fileuploadertest.FileUploaderTests@7dfb0c0f]" started-at="2024-03-24T22:28:33 CET" name="tearDown" finished-at="2024-03-24T22:28:33 CET" duration-ms="654" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.horizontalslidetest.HorizontalSliderTests -->
-    </test> <!-- HorizontalSliderTests-FF -->
-  </suite> <!-- HorizontalSliderTestSuite -->
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.fileuploadertest.FileUploaderTests@7dfb0c0f]" started-at="2024-03-24T22:28:33 CET" name="setUp" finished-at="2024-03-24T22:28:35 CET" duration-ms="1760" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2133661d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="fileUploaderTest(int,java.lang.String)[pri:0, instance:com.fileuploadertest.FileUploaderTests@7dfb0c0f]" started-at="2024-03-24T22:28:35 CET" name="fileUploaderTest" data-provider="files" finished-at="2024-03-24T22:28:38 CET" duration-ms="3240" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[File.json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileUploaderTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.fileuploadertest.FileUploaderTests@7dfb0c0f]" started-at="2024-03-24T22:28:38 CET" name="tearDown" finished-at="2024-03-24T22:28:39 CET" duration-ms="646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.fileuploadertest.FileUploaderTests -->
+    </test> <!-- FileUploaderTests -->
+  </suite> <!-- FileUploaderTestsSuite -->
 </testng-results>

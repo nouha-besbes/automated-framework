@@ -25,6 +25,8 @@ public class EditorTests extends TestUtilities {
 		// click on editor link
 		EditorPage editorPage = welcomePage.clickEditorLink();
 
+		sleep(5000);
+
 		String result = editorPage.getEditorText();
 
 		assertEquals(result, "Your content goes here.", "Editor default text is not expected.");

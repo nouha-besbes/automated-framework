@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [DragAndDropTestsSuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="DragAndDropTests-FF(failed)">
-    <parameter name="browser" value="firefox"/>
+<suite name="Failed suite [EditorTestsSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="EditorTests(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.draganddroptest.DragAndDropTests">
+      <class name="com.editor.EditorTests">
         <methods>
           <include name="tearDown"/>
+          <include name="editorTest"/>
           <include name="setUp"/>
-          <include name="dragColumAIntoColumBTest"/>
         </methods>
-      </class> <!-- com.draganddroptest.DragAndDropTests -->
+      </class> <!-- com.editor.EditorTests -->
     </classes>
-  </test> <!-- DragAndDropTests-FF(failed) -->
-</suite> <!-- Failed suite [DragAndDropTestsSuite] -->
+  </test> <!-- EditorTests(failed) -->
+</suite> <!-- Failed suite [EditorTestsSuite] -->
