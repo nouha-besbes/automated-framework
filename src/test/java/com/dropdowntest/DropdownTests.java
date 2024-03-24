@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import com.base.TestUtilities;
 import com.pages.DropdownPage;
-import com.pages.WelcomePageObject;
+import com.pages.WelcomePage;
 
 public class DropdownTests extends TestUtilities {
 
@@ -15,7 +15,7 @@ public class DropdownTests extends TestUtilities {
 		log.info("Starting selectingDropDownTest");
 
 		// open main page
-		WelcomePageObject welcomePage = new WelcomePageObject(driver, log);
+		WelcomePage welcomePage = new WelcomePage(driver, log);
 		welcomePage.openPage();
 
 		// Click on Dropdown link

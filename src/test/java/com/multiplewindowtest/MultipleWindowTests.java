@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import com.base.TestUtilities;
 import com.pages.NewWindowPage;
-import com.pages.WelcomePageObject;
+import com.pages.WelcomePage;
 import com.pages.WindowPage;
 
 public class MultipleWindowTests extends TestUtilities {
@@ -16,7 +16,7 @@ public class MultipleWindowTests extends TestUtilities {
 		log.info("Starting open tab tests");
 
 		// open main page
-		WelcomePageObject welcomePage = new WelcomePageObject(driver, log);
+		WelcomePage welcomePage = new WelcomePage(driver, log);
 		welcomePage.openPage();
 
 		// click on Window link

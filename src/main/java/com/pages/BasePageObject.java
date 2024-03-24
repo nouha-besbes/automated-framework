@@ -7,6 +7,7 @@ import java.util.Set;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
@@ -134,5 +135,33 @@ public class BasePageObject {
 		log.info("Pressing " + key.name() + " using Actions class");
 		Actions action = new Actions(driver);
 		action.sendKeys(key).build().perform();
+	}
+
+	/** Perform scroll to the bottom */
+	public void scrollToBottom() {
+		log.info("Scrolling to the bottom of the page");
+		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		jsExecutor.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+	}
+
+	// TODO check this for firefox
+	/** Perform drag and drop */
+	protected void performDragAndDrop(By columnA, By columnB) {
+		log.info("Drag and drop A box on B box");
+		// Creating object of Actions class to build composite actions
+
+		var builder = new Actions(driver);
+		builder.clickAndHold(find(columnA));
+		builder.moveToElement(find(columnB), 5, 5);
+		builder.perform();
+
+		builder.release(find(columnB));
+		builder.perform();
+	}
+
+	/** Perform mouse hover over element */
+	protected void hoverOverElement(WebElement element) {
+		Actions action = new Actions(driver);
+		action.moveToElement(element).build().perform();
 	}
 }

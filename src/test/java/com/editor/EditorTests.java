@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import com.base.TestUtilities;
 import com.pages.EditorPage;
-import com.pages.WelcomePageObject;
+import com.pages.WelcomePage;
 
 public class EditorTests extends TestUtilities {
 
@@ -15,13 +15,19 @@ public class EditorTests extends TestUtilities {
 		log.info("Starting editor tests");
 
 		// open main page
-		WelcomePageObject welcomePage = new WelcomePageObject(driver, log);
+		WelcomePage welcomePage = new WelcomePage(driver, log);
+
 		welcomePage.openPage();
+
+		// Scroll to the bottom
+		welcomePage.scrollToBottom();
 
 		// click on editor link
 		EditorPage editorPage = welcomePage.clickEditorLink();
 
-		assertEquals(editorPage.getEditorText(), "Your content goes here.", "Editor default text is not expected.");
+		String result = editorPage.getEditorText();
+
+		assertEquals(result, "Your content goes here.", "Editor default text is not expected.");
 
 	}
 

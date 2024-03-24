@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import com.base.TestUtilities;
 import com.pages.LoginPage;
 import com.pages.SecureAreaPage;
-import com.pages.WelcomePageObject;
+import com.pages.WelcomePage;
 
 public class PositiveLoginTests extends TestUtilities {
 
@@ -14,7 +14,7 @@ public class PositiveLoginTests extends TestUtilities {
 	public void logInTest() {
 		log.info("Starting logIn test");
 
-		WelcomePageObject welcomePageObject = new WelcomePageObject(driver, log);
+		WelcomePage welcomePageObject = new WelcomePage(driver, log);
 		welcomePageObject.openPage();
 
 		LoginPage loginPage = welcomePageObject.clickFormAuthenticationLink();

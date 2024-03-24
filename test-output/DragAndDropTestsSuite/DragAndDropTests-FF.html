@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  EditorTests</title>
+<title>TestNG:  DragAndDropTests-FF</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>EditorTests</h2><table border='1' align="center">
+<h2 align='center'>DragAndDropTests-FF</h2><table border='1' align="center">
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Mar 24 14:48:22 CET 2024</td>
+<td>Started on:</td><td>Sun Mar 24 15:36:50 CET 2024</td>
 </tr>
-<tr><td>Total time:</td><td>13 seconds (13142 ms)</td>
+<tr><td>Total time:</td><td>51 seconds (51891 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,18 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.editor.EditorTests.editorTest()'><b>editorTest</b><br>Test class: com.editor.EditorTests</td>
-<td><div><pre>java.lang.AssertionError: Editor default text is not expected. expected [Your content goes here.] but found []
-	at com.editor.EditorTests.editorTest(EditorTests.java:32)
+<td title='com.draganddroptest.DragAndDropTests.dragColumAIntoColumBTest()'><b>dragColumAIntoColumBTest</b><br>Test class: com.draganddroptest.DragAndDropTests</td>
+<td><div><pre>java.lang.AssertionError: Column A header should be B, but it is: A expected [true] but found [false]
+	at com.draganddroptest.DragAndDropTests.dragColumAIntoColumBTest(DragAndDropTests.java:24)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace635068762", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace635068762'><pre>java.lang.AssertionError: Editor default text is not expected. expected [Your content goes here.] but found []
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace859193874", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace859193874'><pre>java.lang.AssertionError: Column A header should be B, but it is: A expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at com.editor.EditorTests.editorTest(EditorTests.java:32)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.draganddroptest.DragAndDropTests.dragColumAIntoColumBTest(DragAndDropTests.java:24)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -117,8 +115,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>9</td>
-<td>com.editor.EditorTests@69504ae9</td></tr>
+<td>46</td>
+<td>com.draganddroptest.DragAndDropTests@69504ae9</td></tr>
 </table><p>
 </body>
 </html>

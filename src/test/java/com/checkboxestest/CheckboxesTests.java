@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import com.base.TestUtilities;
 import com.pages.CheckboxesPage;
-import com.pages.WelcomePageObject;
+import com.pages.WelcomePage;
 
 public class CheckboxesTests extends TestUtilities {
 
@@ -15,7 +15,7 @@ public class CheckboxesTests extends TestUtilities {
 		log.info("Starting selectingTwoCheckboxesTest");
 
 		// open main page
-		WelcomePageObject welcomePage = new WelcomePageObject(driver, log);
+		WelcomePage welcomePage = new WelcomePage(driver, log);
 		welcomePage.openPage();
 
 		// Click on Checkboxes link

@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="HoversTestsSuite" verbose="1">
+	
+	<test name="HoversTests">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.hovertest.HoversTests" />
+		</classes>
+	</test>
+	 
+</suite>

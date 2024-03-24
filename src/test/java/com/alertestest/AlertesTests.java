@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import com.base.TestUtilities;
 import com.pages.AlertesPage;
-import com.pages.WelcomePageObject;
+import com.pages.WelcomePage;
 
 public class AlertesTests extends TestUtilities {
 
@@ -15,7 +15,7 @@ public class AlertesTests extends TestUtilities {
 		log.info("Starting jsAlerte tests");
 
 		// open main page
-		WelcomePageObject welcomePage = new WelcomePageObject(driver, log);
+		WelcomePage welcomePage = new WelcomePage(driver, log);
 		welcomePage.openPage();
 
 		// click on Checkboxes link
@@ -43,7 +43,7 @@ public class AlertesTests extends TestUtilities {
 		log.info("Starting js dismiss test");
 
 		// open main page
-		WelcomePageObject welcomePage = new WelcomePageObject(driver, log);
+		WelcomePage welcomePage = new WelcomePage(driver, log);
 		welcomePage.openPage();
 
 		// click on Checkboxes link
@@ -71,7 +71,7 @@ public class AlertesTests extends TestUtilities {
 		log.info("Starting js promp test");
 
 		// open main page
-		WelcomePageObject welcomePage = new WelcomePageObject(driver, log);
+		WelcomePage welcomePage = new WelcomePage(driver, log);
 		welcomePage.openPage();
 
 		// click on Checkboxes link

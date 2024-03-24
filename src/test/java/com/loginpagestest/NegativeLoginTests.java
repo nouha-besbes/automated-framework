@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import com.base.TestUtilities;
 import com.pages.LoginPage;
-import com.pages.WelcomePageObject;
+import com.pages.WelcomePage;
 
 public class NegativeLoginTests extends TestUtilities {
 
@@ -15,7 +15,7 @@ public class NegativeLoginTests extends TestUtilities {
 	public void negativeTest(String username, String password, String expectedErrorMessage) {
 		log.info("Starting negativeTest");
 
-		WelcomePageObject welcomePageObject = new WelcomePageObject(driver, log);
+		WelcomePage welcomePageObject = new WelcomePage(driver, log);
 		welcomePageObject.openPage();
 
 		LoginPage loginPage = welcomePageObject.clickFormAuthenticationLink();
