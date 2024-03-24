@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="KeyPressesTestsSuite" verbose="1">
+	
+	<test name="KeyPressesTests-CH">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.keypressestest.KeyPressesTests">
+				<methods>
+					<include name="keyPressesTests"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="KeyPressesTests-FF">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="com.keypressestest.KeyPressesTests" >
+				<methods>
+					<exclude name="keyPressesTests"></exclude>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	 
+</suite>
