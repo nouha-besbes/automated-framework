@@ -1,8 +1,8 @@
 package com.alertestest;
 
-import static org.testng.Assert.assertTrue;
-
+import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.base.TestUtilities;
 import com.pages.AlertesPage;
@@ -32,10 +32,14 @@ public class AlertesTests extends TestUtilities {
 		// get results text
 		String result = alertesPage.getResultText();
 
-		// verification
-		assertTrue(alertMessage.equals("I am a JS Alert"), "Alert message is not expected");
+		SoftAssert softAssert = new SoftAssert();
 
-		assertTrue(result.equals("You successfully clicked an alert"), "Result is not expected");
+		// verification
+		softAssert.assertTrue(alertMessage.equals("I am a JS Alert"), "Alert message is not expected");
+
+		softAssert.assertTrue(result.equals("You successfully clicked an alert"), "Result is not expected");
+
+		softAssert.assertAll();
 	}
 
 	@Test
@@ -61,9 +65,9 @@ public class AlertesTests extends TestUtilities {
 		String result = alertesPage.getResultText();
 
 		// verification
-		assertTrue(alertMessage.equals("I am a JS Confirm"), "Alert message is not expected");
+		Assert.assertTrue(alertMessage.equals("I am a JS Confirm"), "Alert message is not expected");
 
-		assertTrue(result.equals("You clicked: Cancel"), "Result is not expected");
+		Assert.assertTrue(result.equals("You clicked: Cancel"), "Result is not expected");
 	}
 
 	@Test
@@ -89,8 +93,8 @@ public class AlertesTests extends TestUtilities {
 		String result = alertesPage.getResultText();
 
 		// verification
-		assertTrue(alertMessage.equals("I am a JS prompt"), "Alert message is not expected");
+		Assert.assertTrue(alertMessage.equals("I am a JS prompt"), "Alert message is not expected");
 
-		assertTrue(result.equals("You entered: test"), "Result is not expected");
+		Assert.assertTrue(result.equals("You entered: test"), "Result is not expected");
 	}
 }
