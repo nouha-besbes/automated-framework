@@ -1,5 +1,6 @@
 package com.loginpagestest;
 
+import org.openqa.selenium.Cookie;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -17,9 +18,20 @@ public class PositiveLoginTests extends TestUtilities {
 		welcomePageObject.openPage();
 
 		LoginPage loginPage = welcomePageObject.clickFormAuthenticationLink();
+
+		// Add new cookie
+		Cookie ck = new Cookie("username", "tomsmith", "the-internet.herokuapp.com", "/", null);
+		loginPage.setCookie(ck);
+
 		SecureAreaPage secureAreaPage = loginPage.logIn("tomsmith", "SuperSecretPassword!");
 
-		String expectedUrl = "http://the-internet.herokuapp.com/secure";
+		// Get cookies
+		String username = secureAreaPage.getCookie("username");
+		log.info("Username cookie: " + username);
+		String session = secureAreaPage.getCookie("rack.session");
+		log.info("Session cookie: " + session);
+
+		String expectedUrl = "https://the-internet.herokuapp.com/secure";
 		Assert.assertEquals(secureAreaPage.getCurrentUrl(), expectedUrl);
 
 		// log out button is visible
