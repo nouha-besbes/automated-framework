@@ -12,7 +12,6 @@ public class EditorTests extends TestUtilities {
 
 	@Test
 	public void editorTest() {
-		log.info("Starting editor tests");
 
 		// open main page
 		WelcomePage welcomePage = new WelcomePage(driver, log);

@@ -12,7 +12,6 @@ public class DropdownTests extends TestUtilities {
 
 	@Test
 	public void selectingDropDownTest() {
-		log.info("Starting selectingDropDownTest");
 
 		// open main page
 		WelcomePage welcomePage = new WelcomePage(driver, log);

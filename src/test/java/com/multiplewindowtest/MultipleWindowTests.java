@@ -13,7 +13,6 @@ public class MultipleWindowTests extends TestUtilities {
 
 	@Test
 	public void openTabTest() {
-		log.info("Starting open tab tests");
 
 		// open main page
 		WelcomePage welcomePage = new WelcomePage(driver, log);

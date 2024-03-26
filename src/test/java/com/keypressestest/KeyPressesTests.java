@@ -12,8 +12,6 @@ public class KeyPressesTests extends TestUtilities {
 	@Test
 	public void keyPressesTests() {
 
-		log.info("Starting keyPresses tests");
-
 		// click on editor link
 		KeyPressesPage keyPressesPage = new KeyPressesPage(driver, log);
 

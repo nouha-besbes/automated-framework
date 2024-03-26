@@ -1,7 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="SmokeTestSuite" verbose="1">
-	
+	<listeners>
+		<listener class-name="com.base.TestListener"></listener>
+	</listeners>
 	<test name="PositiveLoginTest">
 		<classes>
 			<class name="com.loginpagestest.PositiveLoginTests" />

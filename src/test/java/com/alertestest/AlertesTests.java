@@ -12,7 +12,6 @@ public class AlertesTests extends TestUtilities {
 
 	@Test
 	public void jsAlertesTest() {
-		log.info("Starting jsAlerte tests");
 
 		// open main page
 		WelcomePage welcomePage = new WelcomePage(driver, log);
@@ -44,7 +43,6 @@ public class AlertesTests extends TestUtilities {
 
 	@Test
 	public void jsDismissTest() {
-		log.info("Starting js dismiss test");
 
 		// open main page
 		WelcomePage welcomePage = new WelcomePage(driver, log);
@@ -72,7 +70,6 @@ public class AlertesTests extends TestUtilities {
 
 	@Test
 	public void jsPrompTest() {
-		log.info("Starting js promp test");
 
 		// open main page
 		WelcomePage welcomePage = new WelcomePage(driver, log);

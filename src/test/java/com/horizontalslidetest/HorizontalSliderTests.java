@@ -10,7 +10,6 @@ public class HorizontalSliderTests extends TestUtilities {
 
 	@Test
 	public void sliderTest() throws InterruptedException {
-		log.info("Starting sliderTest");
 
 		// Open HorizontalSliderPage
 		HorizontalSliderPage horizontalSliderPage = new HorizontalSliderPage(driver, log);
