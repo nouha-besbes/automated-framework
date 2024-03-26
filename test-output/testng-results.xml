@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-26T17:36:29 CET" name="PositiveLoginTestSuite" finished-at="2024-03-26T17:36:37 CET" duration-ms="7837">
+  <suite started-at="2024-03-26T17:59:40 CET" name="JSErrorTestSuite" finished-at="2024-03-26T18:00:34 CET" duration-ms="54108">
     <groups>
     </groups>
-    <test started-at="2024-03-26T17:36:29 CET" name="PositiveLoginTest" finished-at="2024-03-26T17:36:37 CET" duration-ms="7837">
-      <class name="com.loginpagestest.PositiveLoginTests">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,java.lang.String,org.testng.ITestContext)[pri:0, instance:com.loginpagestest.PositiveLoginTests@5dafbe45]" started-at="2024-03-26T17:36:29 CET" name="setUp" finished-at="2024-03-26T17:36:32 CET" duration-ms="2835" status="PASS">
+    <test started-at="2024-03-26T17:59:40 CET" name="JSErrorTests" finished-at="2024-03-26T18:00:34 CET" duration-ms="54108">
+      <class name="com.jserrortests.JSErrorTests">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,java.lang.String,org.testng.ITestContext)[pri:0, instance:com.jserrortests.JSErrorTests@3aa078fd]" started-at="2024-03-26T17:59:40 CET" name="setUp" finished-at="2024-03-26T17:59:43 CET" duration-ms="2817" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.loginpagestest.PositiveLoginTests.logInTest()]]>
+                <![CDATA[public void com.jserrortests.JSErrorTests.jsErrorTest()]]>
               </value>
             </param>
             <param index="1">
@@ -21,27 +21,25 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@47fbc56]]>
+                <![CDATA[org.testng.TestRunner@56078cea]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="logInTest()[pri:0, instance:com.loginpagestest.PositiveLoginTests@5dafbe45]" started-at="2024-03-26T17:36:32 CET" name="logInTest" finished-at="2024-03-26T17:36:36 CET" duration-ms="4146" status="FAIL">
+        <test-method signature="jsErrorTest()[pri:0, instance:com.jserrortests.JSErrorTests@3aa078fd]" started-at="2024-03-26T17:59:43 CET" name="jsErrorTest" finished-at="2024-03-26T18:00:31 CET" duration-ms="48676" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [http://the-internet.herokuapp.com/secure] but found [https://the-internet.herokuapp.com/login]]]>
+              <![CDATA[The following asserts failed:
+Severe error: http://the-internet.herokuapp.com/javascript_error 6:51 Uncaught TypeError: Cannot read properties of undefined (reading 'xyz')]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [http://the-internet.herokuapp.com/secure] but found [https://the-internet.herokuapp.com/login]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at com.loginpagestest.PositiveLoginTests.logInTest(PositiveLoginTests.java:24)
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Severe error: http://the-internet.herokuapp.com/javascript_error 6:51 Uncaught TypeError: Cannot read properties of undefined (reading 'xyz')
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.jserrortests.JSErrorTests.jsErrorTest(JSErrorTests.java:32)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -75,19 +73,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logInTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.loginpagestest.PositiveLoginTests@5dafbe45]" started-at="2024-03-26T17:36:36 CET" name="tearDown" finished-at="2024-03-26T17:36:37 CET" duration-ms="814" status="PASS">
+        </test-method> <!-- jsErrorTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.jserrortests.JSErrorTests@3aa078fd]" started-at="2024-03-26T18:00:31 CET" name="tearDown" finished-at="2024-03-26T18:00:34 CET" duration-ms="2569" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=logInTest status=FAILURE method=PositiveLoginTests.logInTest()[pri:0, instance:com.loginpagestest.PositiveLoginTests@5dafbe45] output={null}]]]>
+                <![CDATA[[TestResult name=jsErrorTest status=FAILURE method=JSErrorTests.jsErrorTest()[pri:0, instance:com.jserrortests.JSErrorTests@3aa078fd] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.loginpagestest.PositiveLoginTests -->
-    </test> <!-- PositiveLoginTest -->
-  </suite> <!-- PositiveLoginTestSuite -->
+      </class> <!-- com.jserrortests.JSErrorTests -->
+    </test> <!-- JSErrorTests -->
+  </suite> <!-- JSErrorTestSuite -->
 </testng-results>

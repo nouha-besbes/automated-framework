@@ -8,14 +8,15 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">PositiveLoginTestSuite</th></tr>
-<tr><td><a href="#t0">PositiveLoginTest</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">7 837</td><td></td><td></td></tr>
+<tr><th colspan="8">JSErrorTestSuite</th></tr>
+<tr><td><a href="#t0">JSErrorTests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">54 108</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">PositiveLoginTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">PositiveLoginTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.loginpagestest.PositiveLoginTests</td><td><a href="#m0">logInTest</a></td><td rowspan="1">1711470992502</td><td rowspan="1">4146</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">JSErrorTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">JSErrorTests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.jserrortests.JSErrorTests</td><td><a href="#m0">jsErrorTest</a></td><td rowspan="1">1711472383104</td><td rowspan="1">48676</td></tr></tbody>
 </table>
-<h2>PositiveLoginTest</h2><h3 id="m0">com.loginpagestest.PositiveLoginTests#logInTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [http://the-internet.herokuapp.com/secure] but found [https://the-internet.herokuapp.com/login]
-	at com.loginpagestest.PositiveLoginTests.logInTest(PositiveLoginTests.java:24)
+<h2>JSErrorTests</h2><h3 id="m0">com.jserrortests.JSErrorTests#jsErrorTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	Severe error: http://the-internet.herokuapp.com/javascript_error 6:51 Uncaught TypeError: Cannot read properties of undefined (reading &apos;xyz&apos;)
+	at com.jserrortests.JSErrorTests.jsErrorTest(JSErrorTests.java:32)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
