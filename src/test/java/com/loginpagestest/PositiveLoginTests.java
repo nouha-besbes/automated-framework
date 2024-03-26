@@ -20,7 +20,7 @@ public class PositiveLoginTests extends TestUtilities {
 		LoginPage loginPage = welcomePageObject.clickFormAuthenticationLink();
 		SecureAreaPage secureAreaPage = loginPage.logIn("tomsmith", "SuperSecretPassword!");
 
-		String expectedUrl = "https://the-internet.herokuapp.com/secure";
+		String expectedUrl = "http://the-internet.herokuapp.com/secure";
 		Assert.assertEquals(secureAreaPage.getCurrentUrl(), expectedUrl);
 
 		// log out button is visible

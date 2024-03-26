@@ -3,13 +3,13 @@
 <suite name="Failed suite [PositiveLoginTestSuite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="PositiveLoginTest(failed)">
     <classes>
-      <class name="test.java.com.loginpagestest.PositiveLoginTests">
+      <class name="com.loginpagestest.PositiveLoginTests">
         <methods>
-          <include name="setUp"/>
-          <include name="logInTest"/>
           <include name="tearDown"/>
+          <include name="logInTest"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- test.java.com.loginpagestest.PositiveLoginTests -->
+      </class> <!-- com.loginpagestest.PositiveLoginTests -->
     </classes>
   </test> <!-- PositiveLoginTest(failed) -->
 </suite> <!-- Failed suite [PositiveLoginTestSuite] -->
