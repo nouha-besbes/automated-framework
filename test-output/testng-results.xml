@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-24T22:28:21 CET" name="FileUploaderTestsSuite" finished-at="2024-03-24T22:28:39 CET" duration-ms="17720">
+  <suite started-at="2024-03-26T02:11:03 CET" name="NegativeLoginTestSuite" finished-at="2024-03-26T02:11:41 CET" duration-ms="38187">
     <groups>
     </groups>
-    <test started-at="2024-03-24T22:28:21 CET" name="FileUploaderTests" finished-at="2024-03-24T22:28:39 CET" duration-ms="17720">
-      <class name="com.fileuploadertest.FileUploaderTests">
-        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.fileuploadertest.FileUploaderTests@7dfb0c0f]" started-at="2024-03-24T22:28:21 CET" name="setUp" finished-at="2024-03-24T22:28:24 CET" duration-ms="2629" status="PASS">
+    <test started-at="2024-03-26T02:11:03 CET" name="NegativeLogInTest-CH" finished-at="2024-03-26T02:11:41 CET" duration-ms="38187">
+      <class name="com.loginpagestest.NegativeLoginTests">
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.loginpagestest.NegativeLoginTests@d23e042]" started-at="2024-03-26T02:11:03 CET" name="setUp" finished-at="2024-03-26T02:11:06 CET" duration-ms="3174" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -16,34 +16,29 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@2133661d]]>
+                <![CDATA[org.testng.TestRunner@4c012563]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="fileUploaderTest(int,java.lang.String)[pri:0, instance:com.fileuploadertest.FileUploaderTests@7dfb0c0f]" started-at="2024-03-24T22:28:24 CET" name="fileUploaderTest" data-provider="files" finished-at="2024-03-24T22:28:27 CET" duration-ms="3222" status="PASS">
+        <test-method signature="negativeLogInTest(java.util.Map)[pri:1, instance:com.loginpagestest.NegativeLoginTests@d23e042]" started-at="2024-03-26T02:11:06 CET" name="negativeLogInTest" data-provider="csvReader" finished-at="2024-03-26T02:11:12 CET" duration-ms="5414" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Test.txt]]>
+                <![CDATA[{no=1, description=incorrect username, password=SuperSecretPassword!, expectedMessage=Your username is invalid!, username=incorrectUsername}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fileUploaderTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.fileuploadertest.FileUploaderTests@7dfb0c0f]" started-at="2024-03-24T22:28:27 CET" name="tearDown" finished-at="2024-03-24T22:28:28 CET" duration-ms="641" status="PASS">
+        </test-method> <!-- negativeLogInTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.loginpagestest.NegativeLoginTests@d23e042]" started-at="2024-03-26T02:11:12 CET" name="tearDown" finished-at="2024-03-26T02:11:12 CET" duration-ms="651" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.fileuploadertest.FileUploaderTests@7dfb0c0f]" started-at="2024-03-24T22:28:28 CET" name="setUp" finished-at="2024-03-24T22:28:30 CET" duration-ms="1886" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.loginpagestest.NegativeLoginTests@d23e042]" started-at="2024-03-26T02:11:12 CET" name="setUp" finished-at="2024-03-26T02:11:14 CET" duration-ms="1963" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -52,34 +47,29 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@2133661d]]>
+                <![CDATA[org.testng.TestRunner@4c012563]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="fileUploaderTest(int,java.lang.String)[pri:0, instance:com.fileuploadertest.FileUploaderTests@7dfb0c0f]" started-at="2024-03-24T22:28:30 CET" name="fileUploaderTest" data-provider="files" finished-at="2024-03-24T22:28:33 CET" duration-ms="2992" status="PASS">
+        <test-method signature="negativeLogInTest(java.util.Map)[pri:1, instance:com.loginpagestest.NegativeLoginTests@d23e042]" started-at="2024-03-26T02:11:14 CET" name="negativeLogInTest" data-provider="csvReader" finished-at="2024-03-26T02:11:18 CET" duration-ms="3433" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[NewFile.xml]]>
+                <![CDATA[{no=2, description=incorrect password, password=incorrectPassword, expectedMessage=Your password is invalid!, username=tomsmith}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fileUploaderTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.fileuploadertest.FileUploaderTests@7dfb0c0f]" started-at="2024-03-24T22:28:33 CET" name="tearDown" finished-at="2024-03-24T22:28:33 CET" duration-ms="654" status="PASS">
+        </test-method> <!-- negativeLogInTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.loginpagestest.NegativeLoginTests@d23e042]" started-at="2024-03-26T02:11:18 CET" name="tearDown" finished-at="2024-03-26T02:11:18 CET" duration-ms="619" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.fileuploadertest.FileUploaderTests@7dfb0c0f]" started-at="2024-03-24T22:28:33 CET" name="setUp" finished-at="2024-03-24T22:28:35 CET" duration-ms="1760" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.loginpagestest.NegativeLoginTests@d23e042]" started-at="2024-03-26T02:11:18 CET" name="setUp" finished-at="2024-03-26T02:11:20 CET" duration-ms="1880" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -88,34 +78,91 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@2133661d]]>
+                <![CDATA[org.testng.TestRunner@4c012563]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="fileUploaderTest(int,java.lang.String)[pri:0, instance:com.fileuploadertest.FileUploaderTests@7dfb0c0f]" started-at="2024-03-24T22:28:35 CET" name="fileUploaderTest" data-provider="files" finished-at="2024-03-24T22:28:38 CET" duration-ms="3240" status="PASS">
+        <test-method signature="negativeLogInTest(java.util.Map)[pri:1, instance:com.loginpagestest.NegativeLoginTests@d23e042]" started-at="2024-03-26T02:11:20 CET" name="negativeLogInTest" data-provider="csvReader" finished-at="2024-03-26T02:11:25 CET" duration-ms="4323" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[File.json]]>
+                <![CDATA[{no=3, description=incorrect username and password, password=incorrectPassword, expectedMessage=Your username is invalid!, username=incorrectUsername}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fileUploaderTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.fileuploadertest.FileUploaderTests@7dfb0c0f]" started-at="2024-03-24T22:28:38 CET" name="tearDown" finished-at="2024-03-24T22:28:39 CET" duration-ms="646" status="PASS">
+        </test-method> <!-- negativeLogInTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.loginpagestest.NegativeLoginTests@d23e042]" started-at="2024-03-26T02:11:25 CET" name="tearDown" finished-at="2024-03-26T02:11:25 CET" duration-ms="640" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.fileuploadertest.FileUploaderTests -->
-    </test> <!-- FileUploaderTests -->
-  </suite> <!-- FileUploaderTestsSuite -->
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.loginpagestest.NegativeLoginTests@d23e042]" started-at="2024-03-26T02:11:25 CET" name="setUp" finished-at="2024-03-26T02:11:27 CET" duration-ms="1817" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@4c012563]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="negativeLogInTest(java.util.Map)[pri:1, instance:com.loginpagestest.NegativeLoginTests@d23e042]" started-at="2024-03-26T02:11:27 CET" name="negativeLogInTest" data-provider="csvReader" finished-at="2024-03-26T02:11:33 CET" duration-ms="6099" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{no=4, description=empty username, password=SuperSecretPassword!, expectedMessage=Your username is invalid!, username=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeLogInTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.loginpagestest.NegativeLoginTests@d23e042]" started-at="2024-03-26T02:11:33 CET" name="tearDown" finished-at="2024-03-26T02:11:34 CET" duration-ms="628" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.loginpagestest.NegativeLoginTests@d23e042]" started-at="2024-03-26T02:11:34 CET" name="setUp" finished-at="2024-03-26T02:11:35 CET" duration-ms="1759" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@4c012563]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="negativeLogInTest(java.util.Map)[pri:1, instance:com.loginpagestest.NegativeLoginTests@d23e042]" started-at="2024-03-26T02:11:35 CET" name="negativeLogInTest" data-provider="csvReader" finished-at="2024-03-26T02:11:41 CET" duration-ms="5087" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{no=5, description=empty password, password=, expectedMessage=Your password is invalid!, username=tomsmith}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeLogInTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.loginpagestest.NegativeLoginTests@d23e042]" started-at="2024-03-26T02:11:41 CET" name="tearDown" finished-at="2024-03-26T02:11:41 CET" duration-ms="653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.loginpagestest.NegativeLoginTests -->
+    </test> <!-- NegativeLogInTest-CH -->
+  </suite> <!-- NegativeLoginTestSuite -->
 </testng-results>
