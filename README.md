@@ -15,5 +15,7 @@ Using Java 17 Selenium 4 TestNg 7.9
 
 **5. Screenshots implementation**
 
-**6. Parrallel execution for tests suites**
+**6. Parallel execution for tests suites**
+
+**7. Simple test with cucumber and testNG plugin, to run cucumber test execute testng.xml**
 
